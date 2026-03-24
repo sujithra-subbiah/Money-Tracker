@@ -3,7 +3,7 @@
 A simple and efficient expense tracking application built with Vanilla JavaScript. This project focuses on managing daily transactions with real-time UI updates.
 
 ## 🚀 Live Demo
-[View Live Site on Netlify](https://your-app-name.netlify.app)
+[View Live Site on Netlify]([https://your-app-name.netlify.app](https://moneytrackerdevelopedbysujithra.netlify.app/))
 
 ## 🛠️ Features
 - **Transaction Management:** Add and track Income/Expenses.
