@@ -1,0 +1,272 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body-la Flexbox add panrom so that footer keela pogum */
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container logic */
+.container {
+    width: 100%;
+    max-width: 400px; /* Laptop-la 400px mela pogaadhu */
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    flex-grow: 1; /* Idhu dhaan container-ai expansion panni footer-ai keela thallum */
+    margin-bottom: 20px;
+}
+/* Attractive Card Effect */
+.balance-card {
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Animation: Simple Fade In */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Button with a Glow Effect */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #10b981;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #34d399;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
+    transform: scale(1.02);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #334155;
+    border: 1px solid #475569;
+    color: white;
+    border-radius: 5px;
+}
+/* Styling the list items */
+li {
+    background-color: #334155;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    list-style-type: none;
+    border-left: 5px solid #10b981; /* Green for profit */
+}
+
+li.minus {
+    border-left: 5px solid #ef4444; /* Red for expense */
+}
+
+/* THE MAGIC: Animation for new items */
+.animate-new {
+    animation: slideIn 0.4s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#balance {
+    transition: all 0.5s ease-out;
+    display: inline-block;
+}
+
+/* Balance minus-la pona mattum red color-ku mara */
+.red-balance {
+    color: #ff4d4d !important;
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+}
+
+.stat-box span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #94a3b8;
+}
+
+.money.plus { color: #10b981; }
+.money.minus { color: #ef4444; }
+.clear-btn {
+    background-color: #475569;
+    margin-top: 15px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.clear-btn:hover {
+    background-color: #ef4444; /* Hover panna red-ah maarum */
+    opacity: 1;
+}
+button:active {
+    transform: scale(0.95); /* Button light-ah amungum (Pressed effect) */
+    filter: brightness(1.2);
+}
+.balance-card h2 {
+    font-size: 2.5rem; /* Default size */
+    word-wrap: break-word; /* Breaks long numbers to next line */
+    overflow-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.2;
+}
+
+/* SMART FIX: If the number is too long, make it smaller automatically */
+#balance {
+    display: block;
+    width: 100%;
+    font-size: clamp(1.5rem, 8vw, 2.5rem); /* This is magic! It shrinks the font based on space */
+}
+/* Stats Container Fix */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%; /* Keeps it inside the main container */
+}
+
+.stat-box {
+    flex: 1;
+    padding: 10px;
+    overflow: hidden; /* This is the key! */
+    text-align: center;
+}
+
+/* Big Number Shrinking Logic */
+.money {
+    font-size: clamp(0.9rem, 3vw, 1.2rem); /* Automatically resizes based on space */
+    word-wrap: break-word;
+    word-break: break-all;
+    display: block;
+    line-height: 1.2;
+}
+.stat-box h3 {
+    word-break: break-all;
+    font-size: clamp(0.7rem, 3vw, 1.1rem);
+}
+/* Footer-ai bottom-la fix panna */
+.main-footer {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Push to the very bottom */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-footer span {
+    color: #a855f7; /* Purple glow matching your balance card */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #6366f1; /* Indigo color */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    background: #6366f1;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    font-size: 0.7rem;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+
+    .balance-card h2 {
+        font-size: 2rem;
+    }
+
+    .stats-container {
+        flex-direction: row; /* Keep stats side by side even in mobile */
+    }
+
+    .stat-box {
+        padding: 10px;
+    }
+
+    .stat-box h3 {
+        font-size: 0.9rem;
+    }
+}
