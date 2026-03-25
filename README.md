@@ -3,7 +3,7 @@
 A modern, responsive, and interactive Expense Tracker built with Vanilla JavaScript. This was developed as part of my **"10 Days, 10 Projects"** challenge.
 
 ## 🚀 Live Demo
-[Check it out on Netlify](https://your-netlify-link-here.netlify.app)
+[Check it out on Netlify]( https://moneytrackerdevelopedbysujithra.netlify.app/)
 
 ## ✨ Features
 - **Real-time Tracking:** Add income and expenses instantly.
