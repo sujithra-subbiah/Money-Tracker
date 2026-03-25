@@ -1,29 +1,29 @@
-# 💰 Day 1: Money Tracker
+# 💰 Money Tracker - Day 1 of 10
 
-A simple and efficient expense tracking application built with Vanilla JavaScript. This project focuses on managing daily transactions with real-time UI updates.
+A modern, responsive, and interactive Expense Tracker built with Vanilla JavaScript. This was developed as part of my **"10 Days, 10 Projects"** challenge.
 
 ## 🚀 Live Demo
-[View Live Site on Netlify]([https://your-app-name.netlify.app](https://moneytrackerdevelopedbysujithra.netlify.app/))
+[Check it out on Netlify](https://your-netlify-link-here.netlify.app)
 
-## 🛠️ Features
-- **Transaction Management:** Add and track Income/Expenses.
-- **Real-time Balance:** Automatically calculates total balance, income, and spending.
-- **Local Storage:** Data is saved locally in the browser, so it persists after refresh.
-- **Responsive UI:** Modern dark-theme layout that works on Mobile, Tablet, and Desktop.
-- **Audio Feedback:** Interactive sounds for typing and adding transactions.
+## ✨ Features
+- **Real-time Tracking:** Add income and expenses instantly.
+- **Interactive UI:** Smooth animations and neon dark-mode aesthetic.
+- **Audio Feedback:** Dynamic sound effects for typing and clicking.
+- **Local Storage:** Data persists even after refreshing the page.
+- **Fully Responsive:** Optimized for Mobile, Tablet, and Desktop views.
 
-## 💻 Tech Stack
-- **HTML5:** Semantic structure.
-- **CSS3:** Flexbox layout, Custom animations, and Media Queries.
-- **JavaScript:** DOM manipulation and LocalStorage API.
+## 🛠️ Tech Stack
+- **HTML5** & **CSS3** (Flexbox, Grid, Animations)
+- **JavaScript** (DOM Manipulation, LocalStorage API)
+- **Netlify** (For Deployment)
 
-## 📁 Folder Structure
-- `index.html` - Main structure.
-- `style.css` - Custom styling and responsiveness.
-- `script.js` - Application logic and state management.
-- `assests/` - Audio files (`click.mp3`, `delete.mp3`).
+## 📸 Preview
+![Screenshot](https://your-github-username.github.io/repo-name/screenshot.png)
 
 ## 👤 Developer
-**S. Sujitra**
-- [GitHub](https://github.com/Sujitra-S)
-- [LinkedIn](https://www.linkedin.com/in/s-sujitra-python-developer)
+**S. Sujithra**
+- LinkedIn: [S. Sujitra](https://www.linkedin.com/in/s-sujitra-python-developer)
+- GitHub: [Sujitra-S](https://github.com/Sujitra-S)
+
+---
+*Follow my 10-day journey to Full Stack Mastery!*

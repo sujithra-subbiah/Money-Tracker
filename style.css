@@ -202,44 +202,57 @@ button:active {
     font-size: clamp(0.7rem, 3vw, 1.1rem);
 }
 /* Footer-ai bottom-la fix panna */
+/* Footer-ai bottom-la fix panni links-ai align panna */
 .main-footer {
     width: 100%;
-    max-width: 400px;
-    text-align: center;
+    margin-top: auto; /* Push to the absolute bottom */
     padding: 20px 0;
-    margin-top: auto; /* Push to the very bottom */
+    text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
 }
 
-.main-footer span {
-    color: #a855f7; /* Purple glow matching your balance card */
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.social-links {
-    margin: 15px 0;
+.social-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: center; /* Center-la align panna */
+    gap: 25px; /* Links-ku naduvula gap */
+    margin-bottom: 10px;
 }
 
-.social-links a {
-    color: #6366f1; /* Indigo color */
+.social-link {
+    color: #94a3b8; /* Subtle gray color */
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: rgba(99, 102, 241, 0.1);
+    font-size: 0.9rem;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Icon-kum text-kum naduvula space */
 }
 
-.social-links a:hover {
-    color: #ffffff;
-    background: #6366f1;
-    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
-    transform: translateY(-3px);
+/* Hover pannum bodhu glow aagura effect */
+.social-link:hover {
+    color: #a855f7; /* Purple glow color */
+    transform: translateY(-3px); /* Mela thookura maari effect */
+}
+
+.social-link i {
+    font-size: 1.1rem;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 5px;
+}
+
+/* Mobile-la links thirumba adjust aaga */
+@media (max-width: 480px) {
+    .social-container {
+        gap: 15px;
+    }
+    .social-link {
+        font-size: 0.8rem;
+    }
 }
 
 .copyright {
@@ -269,4 +282,17 @@ button:active {
     .stat-box h3 {
         font-size: 0.9rem;
     }
+}
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 5px;
+    font-weight: 500;
 }
